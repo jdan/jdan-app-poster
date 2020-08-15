@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "contentful-management": "^6.0.5",
+    "strftime": "^0.10.0",
+    "uuid": "^8.3.0"
+  }
+}
