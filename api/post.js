@@ -8,7 +8,7 @@ module.exports = (req, res) => {
     })
 
     const id = 'sms-' + uuidv4()
-    const [title, ...lines] = req.body.text.split(/\r?\n{2}/)
+    const [title, ...lines] = req.body.text.split(/(?:\r?\n){2,}/)
 
     client.getSpace(req.body.space)
         .then((space) => {
